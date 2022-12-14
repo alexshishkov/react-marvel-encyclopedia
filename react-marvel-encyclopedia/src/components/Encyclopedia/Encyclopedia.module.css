@@ -1,0 +1,72 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #b6b8b9;
+}
+.logo {
+  width: 240px;
+  height: 100px;
+  background: url('assets/marvel.png');
+  margin-top: 30px;
+}
+.cards {
+  width: 1130px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+.form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.search__bar {
+  display: flex;
+  align-items: center;
+  background: #b6b8b9;
+  border-radius: 60px;
+  padding: 5px 20px;
+  margin-top: 2em;
+}
+.search {
+  background: transparent;
+  border: 0;
+  outline: none;
+  font-size: 1.5em;
+  color: white;
+  padding: 10px;
+}
+::placeholder {
+  color: white;
+}
+.search__img {
+  width: 3em;
+  height: 3em;
+  background: url('assets/search_FILL0_wght400_GRAD0_opsz48.svg');
+  border: none;
+  cursor: pointer;
+  filter: invert(90%)
+}
+@media screen and (max-width: 1170px) {
+  .cards {
+    width: 685px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .wrapper {
+    height: 100%;
+  }
+  .cards {
+    width: 455px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .search__bar input {
+    font-size: 1em;
+  }
+  .cards {
+    width: 230px;
+  }
+}

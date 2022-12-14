@@ -1,0 +1,53 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin: 5px;
+}
+.buttons__wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.button {
+  width: 10px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #b6b8b9;
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 5px 15px;
+  margin: 5px;
+}
+.active__button {
+  border: black 2px solid; 
+  margin: 3px;
+}
+.arrow {
+  width: 40px;
+  height: 40px;
+  background: url(assets/arrow.png) no-repeat;
+  background-size: 100%;
+  filter: invert(60%);
+  cursor: pointer;
+  margin: 5px;
+}
+.arrow:hover {
+  filter: invert(40%);
+}
+.arrow__left {
+  transform: rotate(180deg);
+}
+@media screen and (max-width: 620px) {
+  .buttons__wrapper {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 440px) {
+  .buttons__wrapper {
+    width: 208px;
+  }
+}

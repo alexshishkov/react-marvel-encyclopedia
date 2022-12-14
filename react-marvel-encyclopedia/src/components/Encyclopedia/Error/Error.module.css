@@ -1,0 +1,22 @@
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #b6b8b9;
+}
+.logo {
+  width: 240px;
+  height: 240px;
+  background: url('assets/Deadpool.png');
+  background-size: 100%;
+  margin-top: 30px;
+  margin-bottom: 3%;
+}
+.text {
+  width: 35%;
+  text-align: center;
+  font-size: 1.5em;
+}
